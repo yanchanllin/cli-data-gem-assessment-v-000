@@ -3,9 +3,9 @@ class Libraries::Location
 
   @@all = []
 
-  def self.new_from_index_page(r)
-
-  end
+  # def self.new_from_index_page(r)
+  #
+  # end
 
   def initialize(name=nil, url=nil, location=nil, position=nil)
     @name = name

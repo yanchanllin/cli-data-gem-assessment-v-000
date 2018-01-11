@@ -7,7 +7,7 @@ class Libraries::CLI
 
   def list
       puts ""
-      puts "Libraries in queens area."
+      puts "Libraries in Queens area."
       puts ""
       Libraries::Location.all.each.with_index(1) do |location, i|
         puts "#{i}. #{location.name}"
