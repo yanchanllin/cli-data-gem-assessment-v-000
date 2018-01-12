@@ -1,6 +1,6 @@
 require 'pry'
 require 'nokogiri'
-require 'open-uri'
+require 'open-url'
 class Libraries::Scraper
      attr_accessor :name, :location
 
