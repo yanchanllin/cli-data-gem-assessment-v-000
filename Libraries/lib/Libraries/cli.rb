@@ -3,12 +3,13 @@ class Libraries::CLI
 
   def call
    Libraries::Scraper.scrape_branch
+   puts "Welcome to the Libraries in Queens"
    start
   end
 
   def list
       puts ""
-      puts "Libraries in Queens area."
+      puts "********Libraries in Queens Area********."
       puts ""
       Libraries::Location.all.each.with_index(1) do |location, i|
         puts "#{i}. #{location.name}"
@@ -27,11 +28,13 @@ class Libraries::CLI
     end
 
    def start
-      list
-      input = nil
-      while input != "exit"
-        puts ""
-        puts "What location would you like more information on by name?"
+     puts ""
+     puts "What location would you like more information on by name?"
+      input = gets.strip.to_i
+
+      print_location(input)
+
+      #///////////////start here,not finish yet
         puts ""
         puts "Enter list to see the location again."
         puts "Enter exit to end the program."

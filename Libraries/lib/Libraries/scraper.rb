@@ -9,7 +9,6 @@ class Libraries::Scraper
       name = doc.search("a.bold").each do |link|
       branch_name = link.children.text
         # binding.pry
-
       end
     end
 
