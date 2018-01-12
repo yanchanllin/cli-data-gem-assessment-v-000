@@ -8,10 +8,10 @@ class Libraries::CLI
 
   def print_location(location)
     puts ""
-    puts "-------------- #{location.name} --------------"
+    puts "-------------- #{location} --------------"
 
     puts ""
-    puts location.summary
+    puts location
     puts ""
 
   end
@@ -39,7 +39,7 @@ class Libraries::CLI
       start
     else
       puts ""
-      puts "Thankyou! Goodbye!!"
+      puts "Thankyou,Goodbye!"
       exit
     end
   end
