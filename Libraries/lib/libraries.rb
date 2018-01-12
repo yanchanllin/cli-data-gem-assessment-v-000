@@ -1,6 +1,7 @@
 require 'nokogiri'
 
 
-require "Libraries/version"
-require "Libraries/cli"
-require "Libraries/location"
+require_relative "Libraries/version"
+require_relative "Libraries/cli"
+require_relative "Libraries/location"
+require_relative "Libraries/scraper"

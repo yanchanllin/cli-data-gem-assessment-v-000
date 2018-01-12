@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 require "bundler/setup"
-require "libraries"
-
+# require "libraries"
+require_relative "../lib/libraries"
 Libraries::CLI.new.call

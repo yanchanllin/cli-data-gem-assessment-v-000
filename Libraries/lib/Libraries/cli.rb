@@ -2,6 +2,7 @@
 class Libraries::CLI
 
   def call
+   Libraries::Scraper.scrape_branch
    start
   end
 
