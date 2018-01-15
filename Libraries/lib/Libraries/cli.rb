@@ -19,13 +19,14 @@ class Libraries::CLI
   def start
     puts ""
     puts "What location would you like to find?"
-    input = gets.strip.to_i
+    input = gets.strip
 
     print_location(input)
 
     puts ""
     puts "What location would you like more information on?"
     input = gets.strip
+    until input = "exit"
 
     location = Libraries::Location.find(input.to_i)
 
@@ -42,5 +43,6 @@ class Libraries::CLI
       puts "Thankyou,Goodbye!"
       exit
     end
+  end
   end
 end
