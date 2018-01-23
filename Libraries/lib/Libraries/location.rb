@@ -3,10 +3,6 @@ class Libraries::Location
 
   @@all = []
 
-  # def self.new_from_index_page(r)
-  #
-  # end
-
   def initialize(branch_name=nil, address=nil, phone=nil)
     @branch_name = branch_name
     @address = address

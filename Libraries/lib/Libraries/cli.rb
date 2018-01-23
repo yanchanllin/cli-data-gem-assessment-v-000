@@ -14,13 +14,11 @@ class Libraries::CLI
     puts "Location:           #{location.address}"
     puts "Contact:            #{location.phone}"
     puts ""
-
   end
 
   def print_locations
     Libraries::Location.all.each_with_index do |location,index|
       puts "#{index+1}. #{location.branch_name}"
-
     end
   end
 
@@ -38,21 +36,21 @@ class Libraries::CLI
     input = gets.strip
     until input == "exit"
 
-    location = Libraries::Location.find(input.to_i)
+      location = Libraries::Location.find(input.to_i)
 
-    print_location(location)
+      print_location(location)
 
-    puts ""
-    puts "Would you like to see another location? Enter Y or N"
-
-    input = gets.strip.downcase
-    if input == "y"
-      start
-    else
       puts ""
-      puts "Thankyou,Goodbye!"
-      exit
+      puts "Would you like to see another location? Enter Y or N"
+
+      input = gets.strip.downcase
+      if input == "y"
+        start
+      else
+        puts ""
+        puts "Thankyou,Goodbye!"
+        exit
+      end
     end
-  end
   end
 end
