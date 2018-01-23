@@ -8,25 +8,35 @@ class Libraries::CLI
 
   def print_location(location)
     puts ""
-    puts "-------------- #{location} --------------"
+    puts "-------------- #{location.branch_name} --------------"
 
     puts ""
-    puts location
+    puts "Location:           #{location.address}"
+    puts "Contact:            #{location.phone}"
     puts ""
 
+  end
+
+  def print_locations
+    Libraries::Location.all.each_with_index do |location,index|
+      puts "#{index+1}. #{location.branch_name}"
+
+    end
   end
 
   def start
     puts ""
     puts "What location would you like to find?"
+    print_locations
     input = gets.strip
 
-    print_location(input)
+    location = Libraries::Location.find(input.to_i)
+    print_location(location)
 
     puts ""
     puts "What location would you like more information on?"
     input = gets.strip
-    until input = "exit"
+    until input == "exit"
 
     location = Libraries::Location.find(input.to_i)
 

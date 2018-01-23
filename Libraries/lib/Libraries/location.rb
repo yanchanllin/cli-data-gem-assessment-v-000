@@ -1,5 +1,5 @@
 class Libraries::Location
-  attr_accessor :name, :location
+  attr_accessor :branch_name, :address, :phone
 
   @@all = []
 
@@ -7,11 +7,10 @@ class Libraries::Location
   #
   # end
 
-  def initialize(name=nil, url=nil, location=nil, position=nil)
-    @name = name
-    @url = url
-    @location = location
-    @position = position
+  def initialize(branch_name=nil, address=nil, phone=nil)
+    @branch_name = branch_name
+    @address = address
+    @phone = phone
     @@all << self
   end
 
