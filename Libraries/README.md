@@ -1,4 +1,9 @@
-# Libraries
+# Find Different Location Libraries in Queens
+
+In here we will have cli.rb, location.rb and scraper.rb
+scraper.rb will scrap data from http://www.queenslibrary.org/ql_findabranch
+location.rb will initialize and have most the methods
+cli.rb will start calling the scraper and welcoming the user to start etc.
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Libraries`. To experiment with that code, run `bin/console` for an interactive prompt.
 
