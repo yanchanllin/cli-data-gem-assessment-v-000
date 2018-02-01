@@ -3,7 +3,7 @@ class Libraries::CLI
   def call
     Libraries::Scraper.scrape_branch
     puts ""
-    puts "Welcome to the Libraries in Queens"
+    puts "--------------Welcome to the Libraries in Queens--------------"
     start
   end
 
