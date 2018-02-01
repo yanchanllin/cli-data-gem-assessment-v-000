@@ -19,6 +19,7 @@ class Libraries::Location
        nil
      else
     self.all[id-1]
+    end 
   end
 
   def doc
