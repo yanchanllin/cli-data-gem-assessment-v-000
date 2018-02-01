@@ -1,19 +1,25 @@
+
 class Libraries::CLI
 
   def call
     Libraries::Scraper.scrape_branch
-    puts "Welcome to the Libraries in Queens"
+    puts ""
+    puts "--------------Welcome to the Libraries in Queens--------------"
     start
   end
 
   def print_location(location)
-    puts ""
-    puts "-------------- #{location.branch_name} --------------"
+    if location == nil
+      puts "Sorry try again,please enter from 1-68"
+    else
+      puts ""
+      puts "-------------- #{location.branch_name} --------------"
 
-    puts ""
-    puts "Location:           #{location.address}"
-    puts "Contact:            #{location.phone}"
-    puts ""
+      puts ""
+      puts "Location:   #{location.address}"
+      puts "Contact:    #{location.phone}"
+      puts ""
+    end
   end
 
   def print_locations
@@ -24,33 +30,34 @@ class Libraries::CLI
 
   def start
     puts ""
-    puts "What location would you like to find?"
+    puts "Which location would you like to find?"
+    puts "(Note:There are only 68 libraries list in Queens, please enter from 1-68)"
+    puts ""
     print_locations
-    input = gets.strip
+    input = gets.strip.to_i
 
-    location = Libraries::Location.find(input.to_i)
+    location = Libraries::Location.find(input)
+    print_location(location)
+
+    puts "Which location would you like more information on?"
+    puts "(Note:There are only 68 libraries list in Queens)"
+    puts ""
+    input = gets.strip.to_i
+
+    location = Libraries::Location.find(input)
     print_location(location)
 
     puts ""
-    puts "What location would you like more information on?"
-    input = gets.strip
-    until input == "exit"
+    puts "Would you like to see another location? Enter Y or N"
 
-      location = Libraries::Location.find(input.to_i)
-
-      print_location(location)
-
+    input = gets.strip.downcase
+    if input == "y"
+      start
+    else
       puts ""
-      puts "Would you like to see another location? Enter Y or N"
-
-      input = gets.strip.downcase
-      if input == "y"
-        start
-      else
-        puts ""
-        puts "Thankyou,Goodbye!"
-        exit
-      end
+      puts "Thank you for visiting,Goodbye!"
+      exit
     end
   end
+
 end
