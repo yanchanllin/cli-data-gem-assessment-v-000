@@ -30,17 +30,17 @@ class Libraries::CLI
     puts ""
     print_locations
     input = gets.strip.to_i
-    if input > 68
-      puts "sorry, there is only 68 libraries in Queens"
+    # if input > 68
+    #   puts "sorry, there is only 68 libraries in Queens"
 
       location = Libraries::Location.find(input.to_i)
       print_location(location)
 
       puts ""
-      puts "**Which location would you like more information on? 1-68"
+      puts "Which location would you like more information on? 1-68"
+      puts "(Note:There are 68 libraries list in Queens, please enter from 1-68)"
+      puts ""
       input = gets.strip
-      if input > 68
-        puts "sorry, there is only 68 libraries in Queens"
 
         location = Libraries::Location.find(input.to_i)
         print_location(location)
