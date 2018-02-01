@@ -15,10 +15,10 @@ class Libraries::Location
   end
 
   def self.find(id)
-     if id == 0
-       nil
-     else
-    self.all[id-1]
+    if id == 0
+      nil
+    else
+      self.all[id-1]
     end
   end
 

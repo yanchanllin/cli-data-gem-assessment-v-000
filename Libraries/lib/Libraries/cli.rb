@@ -1,4 +1,3 @@
-
 class Libraries::CLI
 
   def call
