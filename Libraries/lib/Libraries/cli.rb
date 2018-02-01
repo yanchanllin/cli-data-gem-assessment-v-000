@@ -10,7 +10,7 @@ class Libraries::CLI
 
   def print_location(location)
     if location == nil
-      puts "sorry, there is only 68 libraries in Queens"
+      puts "sorry, there is only 68 libraries in Queens,please enter from 1-68"
     else
       puts ""
       puts "-------------- #{location.branch_name} --------------"
