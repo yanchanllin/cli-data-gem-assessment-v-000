@@ -10,7 +10,7 @@ class Libraries::CLI
 
   def print_location(location)
     if location == nil
-      puts "Sorry try again"
+      puts "Sorry try again,please enter from 1-68"
     else
       puts ""
       puts "-------------- #{location.branch_name} --------------"
