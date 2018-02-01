@@ -24,32 +24,35 @@ class Libraries::CLI
 
   def start
     puts ""
-    puts "What location would you like to find?"
-    print_locations
-    input = gets.strip
+    puts "What location would you like to find? 1-68"
+     print_locations
+     input = gets.strip.to_i
+     if input > 68
+       puts "sorry, there is only 68 libraries in Queens"
 
     location = Libraries::Location.find(input.to_i)
     print_location(location)
 
     puts ""
-    puts "What location would you like more information on?"
-    input = gets.strip
-    until input == "exit"
+    puts "What location would you like more information on? 1-68"
+      input = gets.strip
+      if input > 68
+        puts "sorry, there is only 68 libraries in Queens"
 
-      location = Libraries::Location.find(input.to_i)
+        location = Libraries::Location.find(input.to_i)
+         print_location(location)
 
-      print_location(location)
-
-      puts ""
-      puts "Would you like to see another location? Enter Y or N"
-
-      input = gets.strip.downcase
-      if input == "y"
-        start
-      else
         puts ""
-        puts "Thankyou,Goodbye!"
-        exit
+        puts "Would you like to see another location? Enter Y or N"
+
+        input = gets.strip.downcase
+        if input == "y"
+          start
+        else
+          puts ""
+          puts "Thankyou,Goodbye!"
+          exit
+        end
       end
     end
   end
