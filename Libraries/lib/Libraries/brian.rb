@@ -39,7 +39,7 @@ def start
   until input=='exit'
     menu
     input=gets.strip
-    if input == 'meat'
+    if input == 'meats'
       puts MEATS
     elsif input == 'colors'
       puts COLORS
