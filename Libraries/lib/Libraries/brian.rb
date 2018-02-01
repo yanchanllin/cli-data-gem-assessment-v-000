@@ -46,7 +46,7 @@ def start
     elsif input == 'pets'
       puts PETS
     else
-      puts "I did not understand that.  Try again."      
+      puts "I did not understand that.  Try again."
     end
   end
 end

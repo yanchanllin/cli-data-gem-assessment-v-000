@@ -1,1 +1,3 @@
 require_relative '../lib/Libraries/brian.rb'
+
+start
