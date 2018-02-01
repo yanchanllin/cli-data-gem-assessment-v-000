@@ -45,8 +45,11 @@ def start
       puts COLORS
     elsif input == 'pets'
       puts PETS
+    elsif input == 'exit'
+      break
     else
       puts "I did not understand that.  Try again."
     end
   end
+  puts "Thanks for looking at stuff today!  Bye!"
 end
