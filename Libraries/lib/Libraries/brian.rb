@@ -52,6 +52,7 @@ def start
     else
       puts "I did not understand that.  Try again."
     end
+    puts ""
   end
   puts "Thanks for looking at stuff today!  Bye!"
 end
