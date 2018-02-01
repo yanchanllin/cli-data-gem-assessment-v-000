@@ -31,7 +31,7 @@ class Libraries::CLI
   def start
     puts ""
     puts "Which location would you like to find?"
-    puts "(Note:There are 68 libraries list in Queens)"
+    puts "(Note:There are 68 libraries list in Queens, please enter from 1-68)"
     puts ""
     print_locations
     input = gets.strip.to_i
