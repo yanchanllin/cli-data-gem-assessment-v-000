@@ -54,6 +54,6 @@ class Libraries::CLI
           exit
         end
       end
-    end
+
 
 end
