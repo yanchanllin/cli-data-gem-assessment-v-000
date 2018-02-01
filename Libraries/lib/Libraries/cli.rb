@@ -55,7 +55,7 @@ class Libraries::CLI
       start
     else
       puts ""
-      puts "Thankyou,Goodbye!"
+      puts "Thankyou for visiting,Goodbye!"
       exit
     end
   end
