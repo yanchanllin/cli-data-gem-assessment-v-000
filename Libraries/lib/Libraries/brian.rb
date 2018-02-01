@@ -26,11 +26,13 @@ def menu
   puts "meats"
   puts "pets"
   puts "colors"
-  puts "What would you like to see today?\n"
+  puts "What would you like to see today?"
+  puts ""
 end
 
 def greeting
-  puts "Hi, welcome to my example\n"
+  puts "Hi, welcome to my example"
+  puts ""
 end
 
 def start
