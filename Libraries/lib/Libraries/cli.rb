@@ -12,8 +12,8 @@ class Libraries::CLI
     puts "-------------- #{location.branch_name} --------------"
 
     puts ""
-    puts "Location:         #{location.address}"
-    puts "Contact:          #{location.phone}"
+    puts "Location:   #{location.address}"
+    puts "Contact:    #{location.phone}"
     puts ""
   end
 
