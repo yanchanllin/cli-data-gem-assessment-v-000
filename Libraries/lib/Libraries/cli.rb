@@ -33,7 +33,7 @@ class Libraries::CLI
     # if input > 68
     #   puts "sorry, there is only 68 libraries in Queens"
 
-      location = Libraries::Location.find(input.to_i)
+      location = Libraries::Location.find(input)
       print_location(location)
 
       puts ""
@@ -42,7 +42,7 @@ class Libraries::CLI
       puts ""
       input = gets.strip
 
-        location = Libraries::Location.find(input.to_i)
+        location = Libraries::Location.find(input)
         print_location(location)
 
         puts ""
