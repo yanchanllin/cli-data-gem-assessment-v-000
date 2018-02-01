@@ -1,4 +1,4 @@
-require 'pry'
+
 class Libraries::CLI
 
   def call
@@ -35,7 +35,6 @@ class Libraries::CLI
     puts ""
     print_locations
     input = gets.strip.to_i
-    binding.pry
 
     location = Libraries::Location.find(input)
     print_location(location)
