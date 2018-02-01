@@ -39,7 +39,7 @@ class Libraries::CLI
     location = Libraries::Location.find(input)
     print_location(location)
 
-    puts "Which location would you like more information on? 1-68"
+    puts "Which location would you like more information on?"
     puts "(Note:There are 68 libraries list in Queens, please enter from 1-68)"
     puts ""
     input = gets.strip.to_i
