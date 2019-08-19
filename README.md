@@ -1,10 +1,8 @@
-# Build a CLI Application with External Data
+#A CLI Application with External Data
 
-## Overview
+An application that provides a Command Line Interface (CLI) to an external data source. The CLI composed of an Object Oriented Ruby application. 
 
-In this lesson you're going to build an application that provides a Command Line Interface (CLI) to an external data source. The CLI will be composed of an Object Oriented Ruby application. 
-
-**Please note that while you will be writing code to scrape data from a public website, what we're really looking for is your capacity to effectively write good object oriented ruby code (objects, not hashes, separation of concerns, etc.) - we're less interested in the details of the regex's or selector you're using to parse the web pages that you're scraping.**
+**Please note that while code to scrape data from a public website, we're less interested in the details of the regex's or selector you're using to parse the web pages that you're scraping.**
 
 ## Requirements
 
@@ -13,9 +11,6 @@ In this lesson you're going to build an application that provides a Command Line
 3. The data provided must go at least one level deep, generally by showing the user a list of available data and then being able to drill down into a specific item.
 4. The CLI application can not be a Music CLI application as that is too similiar to the other OO Ruby final project. Also please refrain from using Kickstarter as that was used for the scraping 'code along'. Look at the example domains below for inspiration.
 5. Use good OO design patterns. You should be creating a collection of objects - not hashes.
-
-
-*For bonus points, instead of just creating an application, create a gem and for extra bonus points try publishing it to RubyGems.*
 
 ### Example Domains
 
@@ -41,13 +36,6 @@ Take the time to clone, run and look through the code for both of these in detai
 9. Write a blog post about the project and process.
 10. On Learn, submit links to the GitHub repository for your app, your video demo, and your blog post each to the corresponding textbox in the right rail, and hit "I'm done" to wrap it up.  
 
-
-## If you're a Learn-Verified Premium student: 
-
-Unlike the rest of the curriculum, if you have any questions about your assessment or need help with it, please don’t use the Ask New Question feature. Rather than working with Learn Experts, please reach out to your Learn Instructor responsible for this section instead.
-
-Watch for an email from Learn with instructions to schedule an assessment. If you don't receive the email within a day or so after submission, get in touch!
-
 ### Be Prepared to:
 
 1. Explain your code from execution point to exit point. We're making sure you wrote it and understand how it works, nothing else. 10-20 minutes
@@ -61,12 +49,6 @@ If necessary, after the assessment, be prepared to:
 ### What to expect from the assessment
 
 Project reviews are focused on preparing you for technical interviews. Treat project reviews as if they were technical interviews, in both attitude and technical presentation. 
-
-#### Be scrappy.
-- If you make a mistake, correct yourself! We all make mistakes, I promise.
-- Think on your feet. Feel free to look things up while you're pairing with us. You'll be asked to expand on concepts you implemented and you will be pushed to the edge of your knowledge.
-- Explain the details. We're curious!
-- Don’t worry if your code isn’t perfect the first time - focus on getting something working, then refactoring to improve it
 
 #### Make no little plans.
 - You're going to learn a ton. We will give pointers and show you ways to improve your code. This isn't telling you that your code is wrong, it's simply us teaching. Whatever you don't quite understand will be explained.
@@ -86,13 +68,6 @@ Project reviews are focused on preparing you for technical interviews. Treat pro
 - Use the best technical vocabulary you can. We’ll help you with the words you can’t remember, or if you’re unsure about how something is pronounced. 
 - Ask questions! Curiosity and willingness to learn are hugely valued in our industry. If you haven’t heard of something, that’s okay - use this opportunity to learn about it!
 
-
-### What won't happen:
-
-- You won't be told you're ever wrong.
-- You won't be yelled at, belittled, or scolded.
-- You won't be put on the spot without support.
-- There's nothing you can do to instantly fail or blow it.
 
 ## Resources
 
