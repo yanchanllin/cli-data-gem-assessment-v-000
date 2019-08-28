@@ -1,4 +1,4 @@
-#A CLI Application with External Data
+## A CLI Application with External Data
 
 An application that provides a Command Line Interface (CLI) to an external data source. The CLI composed of an Object Oriented Ruby application. 
 
